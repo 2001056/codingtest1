@@ -33,9 +33,8 @@ public class Main {
                 maxKey = a;
 
             }
-            for (String b: myMap.keySet()){
-                if (value > max || (value == max && a.compareTo(maxKey) < 0)) {
-                    max = value;
+            else if (max == value) {
+                if(a.compareTo(maxKey) < 0) {
                     maxKey = a;
                 }
             }
